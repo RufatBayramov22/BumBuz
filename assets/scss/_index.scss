@@ -1,0 +1,1765 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+.header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.785);
+  // background-image: url(../images/homeImg/bgImg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .contanier {
+    .row {
+      .burger {
+        display: none;
+        align-items: center;
+      
+        .mainMenu {
+          display: none;
+      
+          &.active {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            position: absolute;
+           width: 100px;
+           height: 60px;
+           top: 23%;
+           left: 46%;
+            right: 0;
+            z-index: 100;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          }
+      
+          .burgerMenuItem {
+            display: flex;
+      
+            li {
+              margin-bottom: 10px;
+            }
+      
+            a {
+              color: #333;
+              text-decoration: none;
+      
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      
+        .burger-menu-icon {
+          width: 30px;
+          height: 20px;
+          cursor: pointer;
+      
+          .burger-menu-icon-line {
+            width: 100%;
+            height: 3px;
+            background-color: #333;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .navBar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .navList {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin-left: 5%;
+          .navItem {
+            a {
+              font-size: 22px;
+              color: #000;
+            }
+          }
+        }
+      }
+      .language {
+        width: 30%;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 9;
+        a {
+          color: #000;
+          font-size: 22px;
+        }
+        select {
+          border-radius: 15px;
+          background-color: #42c7f4;
+          color: #fff;
+          font-size: 15px;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+//home style
+
+.home {
+  width: 100%;
+  background-image: url(../images/homeImg/bgImg.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  .contanier {
+    .row {
+      .homeContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .homeInfo {
+        width: 81%;
+        margin-top: 10%;
+        h1 {
+          color: #fff;
+          font-family: Oswald;
+          font-size: 70px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 30px;
+        }
+        a {
+          border-radius: 10px;
+          background: #fff;
+          color: #000;
+          text-align: center;
+          font-family: Oswald;
+          font-size: 35px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+.homeImg {
+  display: flex;
+  position: absolute;
+  top: 6%;
+  left: 62%;
+  width: 38%;
+  z-index: 1;
+  img {
+    width: 100%;
+  }
+}
+
+//proven sec
+.provenSolution {
+  width: 100%;
+  position: relative;
+  margin-top: 4%;
+  .contanier {
+    .row {
+      flex-direction: column;
+      .ice {
+        position: absolute;
+        width: 29%;
+        top: 10%;
+        left: -1%;
+        img {
+          width: 100%;
+        }
+      }
+      .provenTitle {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        h2 {
+          color: #111d4f;
+          font-family: Oswald;
+          font-size: 65px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        p {
+          color: #000;
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 43%;
+        }
+        span {
+          width: 100px;
+          height: 10px;
+          border-radius: 10px;
+          background: #087bbc;
+        }
+      }
+      .provenIcons {
+        display: flex;
+        margin-top: 6%;
+        gap: 10px;
+        position: relative;
+        z-index: 20;
+        .icons {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .img {
+            background-color: #111d4f;
+            border-radius: 50px;
+            width: 109px;
+            height: 109px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 140px;
+              height: 140px;
+              flex-shrink: 0;
+              padding: 36px;
+            }
+          }
+          p {
+            color: #000;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 83%;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+//slidetSec
+.sliderSec {
+  width: 100%;
+  background-image: url(../images/homeImg/bgImg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 99;
+  margin-top: 5%;
+  .contanier {
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        color: #111d4f;
+        font-family: Oswald;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .card {
+            width: 100%;
+            background-color: #fff;
+            
+            img {
+              width: 100%;
+            }
+            .title {
+              background-color: #fff;
+              border-radius: 20px;
+              h2 {
+                color: #111d4f;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+              }
+              p {
+                color: #111d4f;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//products style
+.products {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  .contanier {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .rightSide {
+        width: 47%;
+        position: absolute;
+        top: -47%;
+        left: 53%;
+
+        img {
+          width: 100%;
+        }
+      }
+      .productTitle {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        h2 {
+          color: #111d4f;
+          font-family: Oswald;
+          font-size: 65px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        p {
+          color: #000;
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 43%;
+        }
+        span {
+          width: 100px;
+          height: 10px;
+          border-radius: 10px;
+          background: #087bbc;
+        }
+      }
+      .productsImg {
+        display: flex;
+        position: relative;
+        z-index: 10;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+        margin-top: 5%;
+        .imgCard {
+          display: flex;
+          flex-direction: column;
+          padding: 40px;
+          border-radius: 10px;
+          background: #111d4f;
+          width: 25%;
+          flex-shrink: 0;
+          span {
+            color: #087bbc;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+.delivery {
+  width: 100%;
+  position: relative;
+  z-index: 99;
+  margin-top: 10%;
+  .contanier {
+    .row {
+      justify-content: center;
+      .deliveryContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        h3 {
+          color: #111d4f;
+          font-family: Oswald;
+          font-size: 60px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+//conatact sec
+.contactUs {
+  width: 100%;
+  background-image: url(../images/homeImg/bgImg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 99;
+  margin-top: 10%;
+  padding-bottom: 10%;
+  .contanier {
+    .row {
+      flex-direction: column;
+      gap: 40px;
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        p {
+          color: #fff;
+          font-family: Oswald;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+          color: #111d4f;
+          font-family: Oswald;
+          font-size: 65px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        span {
+          border-radius: 10px;
+          background: #087bbc;
+          width: 100px;
+          height: 10px;
+          flex-shrink: 0;
+          display: flex;
+        }
+      }
+      .contactContent {
+        display: flex;
+        gap: 50px;
+        .rightContact {
+          margin-left: 10%;
+          p {
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 20px;
+          }
+          form {
+            margin-bottom: 40%;
+            input {
+              border-radius: 10px;
+              border: none;
+              outline: none;
+              padding: 10px;
+              width: 74%;
+            }
+            button {
+              border-radius: 10px;
+              background: #111d4f;
+              padding: 10px;
+              border: none;
+              outline: none;
+              color: #fff;
+              width: 20%;
+            }
+          }
+          .contact {
+            .locations {
+              color: #fff;
+              font-family: Montserrat;
+              font-size: 25px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            a {
+              color: #fff;
+              font-family: Montserrat;
+              font-size: 25px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            .location {
+              p {
+                color: #fff;
+                font-family: Montserrat;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                display: flex;
+                gap: 10px;
+                img {
+                  width: 20px;
+                  height: 25px;
+                  flex-shrink: 0;
+                }
+              }
+            }
+            .phone {
+              p {
+                color: #fff;
+                font-family: Montserrat;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                display: flex;
+                gap: 10px;
+                img {
+                  width: 20px;
+                  height: 25px;
+                  flex-shrink: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1056px) {
+  .home {
+    width: 100%;
+    .header {
+      width: 100%;
+
+      .navBar {
+        width: 100%;
+      }
+      .language {
+        a {
+          font-size: 14px !important;
+        }
+      }
+    }
+    .contanier {
+      .row {
+        .homeContent {
+          .homeInfo {
+            h1 {
+              font-size: 50px;
+            }
+            a {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .homeImg {
+      top: 16%;
+    }
+  }
+  //proven
+  .provenSolution {
+    width: 100%;
+    .contanier {
+      .row {
+        .provenTitle {
+          h2 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .provenIcons {
+          .icons {
+            .img {
+              width: 100px;
+              height: 100px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //slider
+  .sliderSec {
+    .contanier {
+      .row {
+        .sliderTitle {
+          h2 {
+            font-size: 55px;
+          }
+        }
+        .swiper {
+          .swiper-slide {
+            .card {
+              .title {
+                h2 {
+                  font-size: 25px;
+                }
+                p {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //products
+  .products {
+    width: 100%;
+    .contanier {
+      .row {
+        .productTitle {
+          h2 {
+            font-size: 55px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+        .productsImg {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  //delivery
+  .delivery {
+    width: 100%;
+    .contanier {
+      .row {
+        .deliveryContent {
+          h3 {
+            font-size: 50px;
+          }
+          img {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+  .contactUs {
+    .contanier {
+      .row {
+        .title {
+          h2 {
+            font-size: 55px;
+          }
+          span {
+            height: 7px;
+          }
+        }
+        .contactContent {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .rightContact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 6%;
+            p {
+              font-size: 20px !important;
+            }
+            form {
+              margin-bottom: 10% !important;
+            }
+            .contact {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 956px) {
+  .home {
+    width: 100%;
+    .header {
+      width: 100%;
+
+      .navBar {
+        width: 100%;
+        display: none !important;
+      }
+      .language {
+        a {
+          font-size: 14px !important;
+        }
+      }
+      .burger {
+        display: flex !important;
+        align-items: center;
+      
+        .mainMenu {
+          display: none;
+      
+          &.active {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            position: absolute;
+           width: 100px;
+           height: 60px;
+           top: 23%;
+           left: 46%;
+            right: 0;
+            z-index: 100;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          }
+      
+          .burgerMenuItem {
+            display: flex;
+            flex-direction: column;
+      
+            li {
+              margin-bottom: 10px;
+            }
+      
+            a {
+              color: #333;
+              text-decoration: none;
+      
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      
+        .burger-menu-icon {
+          width: 30px;
+          height: 20px;
+          cursor: pointer;
+      
+          .burger-menu-icon-line {
+            width: 100%;
+            height: 3px;
+            background-color: #333;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+    .contanier {
+      .row {
+        .homeContent {
+          .homeInfo {
+            h1 {
+              font-size: 45px;
+            }
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .homeImg {
+      top: 28%;
+    }
+  }
+  //proven
+  .provenSolution {
+    width: 100%;
+    .contanier {
+      .row {
+        .provenTitle {
+          h2 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .provenIcons {
+          .icons {
+            .img {
+              width: 90px;
+              height: 90px;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //slider
+  .sliderSec {
+    .contanier {
+      .row {
+        .sliderTitle {
+          h2 {
+            font-size: 50px;
+          }
+        }
+        .swiper {
+          .swiper-slide {
+            .card {
+              width: 85%;
+              .title {
+                h2 {
+                  font-size: 20px;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //products
+  .products {
+    width: 100%;
+    .contanier {
+      .row {
+        .productTitle {
+          h2 {
+            font-size: 50px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .productsImg {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  //delivery
+  .delivery {
+    width: 100%;
+    .contanier {
+      .row {
+        .deliveryContent {
+          h3 {
+            font-size: 45px;
+          }
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+  .contactUs {
+    .contanier {
+      .row {
+        .title {
+          h2 {
+            font-size: 50px;
+          }
+          span {
+            height: 7px;
+          }
+        }
+        .contactContent {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .rightContact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 6%;
+            p {
+              font-size: 20px !important;
+            }
+            form {
+              margin-bottom: 10% !important;
+            }
+            .contact {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .home {
+    width: 100%;
+    .header {
+      width: 100%;
+     
+      .navBar {
+        width: 100%;
+        display: none !important;
+      }
+      .language {
+        a {
+          font-size: 14px !important;
+        }
+      }
+    }
+    .contanier {
+      .row {
+        .homeContent {
+          .homeInfo {
+            h1 {
+              font-size: 45px;
+            }
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .homeImg {
+      top: 23%;
+      width: 64%;
+      left: 36%;
+    }
+  }
+  //proven
+  .provenSolution {
+    width: 100%;
+    .contanier {
+      .row {
+        .provenTitle {
+          h2 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 15px;
+            width: 65%;
+          }
+        }
+        .provenIcons {
+          .icons {
+            .img {
+              width: 70px;
+              height: 70px;
+              img {
+                width: 129px;
+                height: 129px;
+              }
+            }
+            p {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //slider
+  .sliderSec {
+    .contanier {
+      .row {
+        .sliderTitle {
+          h2 {
+            font-size: 50px;
+          }
+        }
+        .swiper {
+          .swiper-slide {
+            .card {
+              width: 85%;
+              .title {
+                h2 {
+                  font-size: 20px;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //products
+  .products {
+    width: 100%;
+    .contanier {
+      .row {
+        .rightSide {
+          width: 77%;
+          position: absolute;
+          top: -9%;
+          left: 22%;
+        }
+        .productTitle {
+          h2 {
+            font-size: 50px;
+          }
+          p {
+            font-size: 15px;
+            width: 70%;
+          }
+        }
+        .productsImg {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          .imgCard {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+  //delivery
+  .delivery {
+    width: 100%;
+    .contanier {
+      .row {
+        .deliveryContent {
+          h3 {
+            font-size: 45px;
+          }
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+  .contactUs {
+    .contanier {
+      .row {
+        .title {
+          h2 {
+            font-size: 40px !important;
+          }
+          span {
+            height: 7px;
+          }
+        }
+        .contactContent {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .leftContact {
+            iframe {
+              width: 100%;
+            }
+          }
+          .rightContact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 6%;
+            p {
+              font-size: 20px !important;
+            }
+            form {
+              margin-bottom: 10% !important;
+            }
+            .contact {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home {
+    width: 100%;
+    height: 62vh;
+    .header {
+      width: 100%;
+
+      .navBar {
+        width: 100%;
+        display: none !important;
+      }
+      .language {
+        a {
+          display: none;
+        }
+      }
+    }
+    .contanier {
+      .row {
+        justify-content: center;
+        .homeContent {
+          .homeInfo {
+            h1 {
+              font-size: 45px;
+            }
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .homeImg {
+      top: 23%;
+      width: 64%;
+      left: 36%;
+    }
+  }
+  //proven
+  .provenSolution {
+    width: 100%;
+    .contanier {
+      .row {
+        .provenTitle {
+          h2 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 15px;
+            width: 65%;
+          }
+        }
+        .provenIcons {
+          .icons {
+            .img {
+              width: 70px;
+              height: 70px;
+              img {
+                width: 129px;
+                height: 129px;
+              }
+            }
+            p {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //slider
+  .sliderSec {
+    .contanier {
+      .row {
+        .sliderTitle {
+          h2 {
+            font-size: 50px;
+          }
+        }
+        .swiper {
+          .swiper-slide {
+            .card {
+              width: 85%;
+              .title {
+                h2 {
+                  font-size: 20px;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //products
+  .products {
+    width: 100%;
+    .contanier {
+      .row {
+        .rightSide {
+          width: 77%;
+          position: absolute;
+          top: -9%;
+          left: 22%;
+        }
+        .productTitle {
+          h2 {
+            font-size: 50px;
+          }
+          p {
+            font-size: 15px;
+            width: 70%;
+          }
+        }
+        .productsImg {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          .imgCard {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+  //delivery
+  .delivery {
+    width: 100%;
+    .contanier {
+      .row {
+        .deliveryContent {
+          h3 {
+            font-size: 45px;
+          }
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+  .contactUs {
+    .contanier {
+      .row {
+        .title {
+          h2 {
+            font-size: 40px !important;
+          }
+          span {
+            height: 7px;
+          }
+        }
+        .contactContent {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .leftContact {
+            iframe {
+              width: 100%;
+            }
+          }
+          .rightContact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 6%;
+            p {
+              font-size: 20px !important;
+            }
+            form {
+              margin-bottom: 10% !important;
+            }
+            .contact {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    width: 100%;
+    height: 50vh;
+    .header {
+      width: 100%;
+
+      .navBar {
+        width: 100%;
+        display: none !important;
+      }
+      .language {
+        a {
+          display: none;
+        }
+      }
+    }
+    .contanier {
+      .row {
+        justify-content: space-between;
+        .homeContent {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .homeInfo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            h1 {
+              font-size: 30px !important;
+              text-align: center;
+            }
+            a {
+              font-size: 9px !important;
+            }
+          }
+        }
+      }
+    }
+    .homeImg {
+     display: none;
+    }
+  }
+  //proven
+  .provenSolution {
+    width: 100%;
+    .contanier {
+      .row {
+        .provenTitle {
+          h2 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 11px;
+            width: 73%;
+          }
+          span {
+            width: 88px;
+            height: 6px;
+          }
+        }
+        .provenIcons {
+          flex-direction: column;
+          justify-content: center;
+          .icons {
+            .img {
+              width: 70px;
+              height: 70px;
+              img {
+                width: 129px;
+                height: 129px;
+              }
+            }
+            p {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //slider
+  .sliderSec {
+    .contanier {
+      .row {
+        .sliderTitle {
+          h2 {
+            font-size: 40px;
+          }
+        }
+        .swiper {
+          .swiper-slide {
+            .card {
+              width: 85%;
+              .title {
+                h2 {
+                  font-size: 15px;
+                }
+                p {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //products
+  .products {
+    width: 100%;
+    .contanier {
+      .row {
+        .rightSide {
+          width: 77%;
+          position: absolute;
+          top: -9%;
+          left: 22%;
+        }
+        .productTitle {
+          h2 {
+            font-size: 35px;
+          }
+          p {
+            font-size: 10px;
+            width: 64%;
+          }
+        span{
+          width: 92px;
+          height: 6px;
+        }
+        }
+        .productsImg {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          .imgCard {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+  //delivery
+  .delivery {
+    width: 100%;
+    .contanier {
+      .row {
+        .deliveryContent {
+          h3 {
+            font-size: 40px;
+          }
+          img {
+            width: 84%;
+          }
+        }
+      }
+    }
+  }
+  .contactUs {
+    .contanier {
+      .row {
+        .title {
+          h2 {
+            font-size: 40px !important;
+          }
+          span {
+            height: 7px;
+          }
+        }
+        .contactContent {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .leftContact {
+            iframe {
+              width: 100%;
+            }
+          }
+          .rightContact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 6%;
+            p {
+              font-size: 20px !important;
+            }
+            form {
+              margin-bottom: 10% !important;
+            }
+            .contact {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+             p{
+              font-size: 15px !important;
+             }
+                a{
+                  font-size: 15px !important;
+                }
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 250px) {
+  .home {
+    width: 100%;
+    height: 60vh;
+    .header {
+      width: 100%;
+
+      .navBar {
+        width: 100%;
+        display: none !important;
+      }
+      .language {
+        a {
+          display: none;
+        }
+      }
+    }
+    .contanier {
+      .row {
+        justify-content: center;
+        .homeContent {
+          .homeInfo {
+            h1 {
+              font-size: 30px;
+            }
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .homeImg {
+      top: 23%;
+      width: 64%;
+      left: 36%;
+    }
+  }
+  //proven
+  .provenSolution {
+    width: 100%;
+    .contanier {
+      .row {
+        .provenTitle {
+          h2 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 10px;
+            width: 70%;
+          }
+        }
+        .provenIcons {
+          .icons {
+            .img {
+              width: 70px;
+              height: 70px;
+              img {
+                width: 129px;
+                height: 129px;
+              }
+            }
+            p {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //slider
+  .sliderSec {
+    .contanier {
+      .row {
+        .sliderTitle {
+          h2 {
+            font-size: 25px;
+          }
+        }
+        .swiper {
+          .swiper-slide {
+            .card {
+              width: 90%;
+              .title {
+                h2 {
+                  font-size: 20px;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //products
+  .products {
+    width: 100%;
+    .contanier {
+      .row {
+        .rightSide {
+          width: 77%;
+          position: absolute;
+          top: -9%;
+          left: 22%;
+        }
+        .productTitle {
+          h2 {
+            font-size: 35px;
+          }
+          p {
+            font-size: 10px;
+            width: 100%;
+          }
+        }
+        .productsImg {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          .imgCard {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  //delivery
+  .delivery {
+    width: 100%;
+    .contanier {
+      .row {
+        .deliveryContent {
+          h3 {
+            font-size: 25px;
+          }
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  .contactUs {
+    .contanier {
+      .row {
+        .title {
+          h2 {
+            font-size: 40px !important;
+          }
+          span {
+            height: 7px;
+          }
+        }
+        .contactContent {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .leftContact {
+            iframe {
+              width: 100%;
+            }
+          }
+          .rightContact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 6%;
+            p {
+              font-size: 20px !important;
+            }
+            form {
+              margin-bottom: 10% !important;
+              display: flex;
+              flex-direction: column;
+              button{
+                width: 50% !important;
+              }
+            }
+            .contact {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              .phone{
+                  a{
+                    font-size: 15px !important;
+                  }
+              }
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}
